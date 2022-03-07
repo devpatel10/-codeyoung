@@ -1,0 +1,14 @@
+CREATE SCHEMA `codeyoung` ;
+
+CREATE TABLE `codeyoung`.`translations` (
+    `S.No` INT NOT NULL AUTO_INCREMENT,
+    `From` VARCHAR(45) NOT NULL,
+    `To` VARCHAR(45) NOT NULL,
+    `Text` NVARCHAR(500) NULL,
+    `Translation` NVARCHAR(500) NULL,
+    PRIMARY KEY (`S.No`),
+    UNIQUE INDEX `S.No_UNIQUE` (`S.No` ASC));
+
+
+INSERT INTO `codeyoung`.`translations` (`S.No`, `From`, `To`, `Text`, `Translation`) VALUES ('1', 'English', 'German', 'Hi', 'Hallo');
+INSERT INTO `codeyoung`.`translations` (`S.No`, `From`, `To`, `Text`, `Translation`) VALUES ('2', 'English', 'Hindi', 'how are you', 'आप कैसे हैं');
