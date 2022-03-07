@@ -1,0 +1,112 @@
+{
+	"info": {
+		"_postman_id": "c7149aa2-4d4d-424a-9b4b-86a9d9d94cce",
+		"name": "codeyoung",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:5000/all/",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/all/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"all",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/addToCache",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"From\" : \"Hindi\",\r\n    \"To\" : \"English\" ,\r\n    \"Text\" : \"आप कैसे हैं\" ,\r\n    \"Translation\" : \"How are you\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/addToCache",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"addToCache"
+					],
+					"query": [
+						{
+							"key": "From",
+							"value": "Hindi",
+							"disabled": true
+						},
+						{
+							"key": "To",
+							"value": "English",
+							"disabled": true
+						},
+						{
+							"key": "Text",
+							"value": "आप कैसे हैं",
+							"disabled": true
+						},
+						{
+							"key": "Translation",
+							"value": "How are you",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/searchText?From=English&To=German&Text=Hee",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/searchText?From=English&To=German&Text=Hee",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"searchText"
+					],
+					"query": [
+						{
+							"key": "From",
+							"value": "English"
+						},
+						{
+							"key": "To",
+							"value": "German"
+						},
+						{
+							"key": "Text",
+							"value": "Hee"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
